@@ -329,6 +329,48 @@ section {
   font-size: 16px;
 }
 
+.price-table {
+  margin-bottom: 40px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(14, 16, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.price-table h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.price-table th {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.price-table td:last-child {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.price-table tr:last-child td {
+  border-bottom: none;
+}
+
 .carousel {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -444,6 +486,20 @@ section {
   font-size: 12px;
 }
 
+.footer-link {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--gray-light);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--white);
+}
+
 .whatsapp-float {
   position: fixed;
   right: 24px;
@@ -501,5 +557,18 @@ section {
   .nav-cta {
     align-self: stretch;
     text-align: center;
+  }
+
+  .price-table {
+    padding: 16px;
+  }
+
+  .price-table table {
+    font-size: 13px;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 10px 8px;
   }
 }
