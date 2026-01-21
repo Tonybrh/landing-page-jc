@@ -371,6 +371,56 @@ section {
   border-bottom: none;
 }
 
+.inspirations {
+  margin-top: 80px;
+  padding: 32px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(43, 95, 255, 0.18), rgba(14, 16, 24, 0.9));
+  border: 1px solid rgba(43, 95, 255, 0.25);
+}
+
+.inspirations .section-lead {
+  color: var(--gray-light);
+}
+
+.inspirations-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.inspiration-card {
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(11, 13, 17, 0.7);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.inspiration-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(43, 95, 255, 0.6);
+}
+
+.inspirations-cta {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.inspirations-cta p {
+  color: var(--gray-light);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
 .carousel {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -545,6 +595,10 @@ section {
 
   .carousel-btn {
     justify-self: center;
+  }
+
+  .inspirations {
+    padding: 24px;
   }
 }
 
